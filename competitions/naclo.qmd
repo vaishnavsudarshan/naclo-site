@@ -1,0 +1,30 @@
+---
+title: "NACLO Problems"
+subtitle: "North American Computational Linguistics Olympiad"
+listing:
+  id: naclo-listing
+  contents: "../problems/**/*.qmd"
+  type: table
+  include:
+    categories: "{*}"
+  fields: [title, date, categories, description]
+  filter-ui: true
+  sort: "date desc"
+toc: true
+---
+
+NACLO is held annually for US and Canadian high school students. It consists of two rounds:
+
+- **Open Round** (January): Any student may participate. Problems range from accessible to challenging.
+- **Invitational Round** (March): Top scorers from the Open are invited. Problems are harder, and top scorers advance to IOL.
+
+## Problem difficulty at NACLO
+
+NACLO problems are self-contained — no prior linguistics knowledge is required. The problems are designed so that a careful, methodical thinker can solve them purely from the data provided.
+
+A typical Open Round has 6–8 problems of increasing difficulty. The Invitational has 5–6 harder problems plus a collaborative team component (NACLI).
+
+## Browse NACLO Problems
+
+::: {#naclo-listing}
+:::

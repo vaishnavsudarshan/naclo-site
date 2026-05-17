@@ -1,0 +1,93 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Linguistics Olympiad Prep"
+  description: "Master NACLO, NACLI, and IOL problem-solving with guided solutions and deep linguistic insights."
+  favicon: assets/favicon.svg
+  open-graph: true
+  twitter-card: true
+
+  navbar:
+    background: "#0a0a0f"
+    foreground: "#e8e4d9"
+    logo: assets/logo.svg
+    logo-alt: "LingOlympiad"
+    left:
+      - text: "Problems"
+        href: problems/index.qmd
+      - text: "Topics"
+        href: topics.qmd
+      - text: "Competitions"
+        menu:
+          - text: "NACLO"
+            href: competitions/naclo.qmd
+          - text: "NACLI"
+            href: competitions/nacli.qmd
+          - text: "IOL"
+            href: competitions/iol.qmd
+      - text: "Resources"
+        href: resources.qmd
+    right:
+      - icon: github
+        href: https://github.com/
+        aria-label: GitHub
+      - text: "Search"
+        icon: search
+        href: search.html
+
+  search:
+    location: sidebar
+    type: overlay
+
+  sidebar:
+    - title: "Problem Sets"
+      style: "docked"
+      background: "#0a0a0f"
+      contents:
+        - problems/index.qmd
+        - section: "By Year"
+          contents:
+            - problems/2024.qmd
+            - problems/2023.qmd
+            - problems/2022.qmd
+        - section: "By Topic"
+          contents:
+            - topics/morphology.qmd
+            - topics/syntax.qmd
+            - topics/phonology.qmd
+            - topics/writing-systems.qmd
+            - topics/computational.qmd
+
+  page-footer:
+    background: "#0a0a0f"
+    left: |
+      Made with [Quarto](https://quarto.org) · Problems © their respective competitions
+    right: |
+      [GitHub](https://github.com) · [Report Issue](https://github.com)
+
+format:
+  html:
+    theme:
+      - cosmo
+      - assets/custom.scss
+    css: assets/custom.css
+    highlight-style: assets/syntax.theme
+    toc: true
+    toc-depth: 3
+    toc-expand: true
+    number-sections: false
+    smooth-scroll: true
+    code-fold: true
+    code-tools: true
+    html-math-method: mathjax
+    include-in-header:
+      - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+execute:
+  freeze: auto
+  echo: false

@@ -1,0 +1,37 @@
+---
+title: "Problem Library"
+toc: false
+listing:
+  id: problem-listing
+  contents:
+    - "2024/*.qmd"
+    - "2023/*.qmd"
+    - "2022/*.qmd"
+  type: table
+  fields: [title, date, categories, description]
+  field-display-names:
+    categories: "Topics"
+    date: "Year"
+  sort:
+    - "date desc"
+    - "title asc"
+  filter-ui: true
+  sort-ui: true
+  categories: true
+  table-striped: true
+  table-hover: true
+page-layout: full
+---
+
+```{=html}
+<div class="breadcrumb-nav">
+  <a href="../index.qmd">Home</a>
+  <span class="sep">›</span>
+  <span>Problems</span>
+</div>
+```
+
+Browse all problems across NACLO, NACLI, and IOL. Use the **filter box** to search by keyword, or click a **category tag** to narrow by topic. The sort controls let you order by year or difficulty.
+
+::: {#problem-listing}
+:::

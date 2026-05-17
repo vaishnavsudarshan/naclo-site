@@ -1,0 +1,179 @@
+---
+title: "Devanāgarī Decipherment"
+date: 2023-09-10
+categories: [Writing Systems, Script, Sanskrit, Hard]
+description: "Given Sanskrit words in Devanāgarī alongside romanizations, deduce the script's complete mapping and transliterate new words."
+competition: IOL
+round: Individual
+year: 2023
+difficulty: 4
+points: 30
+---
+
+```{=html}
+<div class="breadcrumb-nav">
+  <span>Home</span><span class="sep">›</span>
+  <a href="../index.qmd">Problems</a><span class="sep">›</span>
+  <span>Devanāgarī Decipherment</span>
+</div>
+
+<div class="problem-meta" style="margin-bottom:1.5rem;">
+  <span class="tag tag-iol">IOL 2023</span>
+  <span class="tag tag-writing">Writing Systems</span>
+  <span class="tag tag-hard">Hard</span>
+  <span class="difficulty" title="Difficulty: 4/5" aria-label="Difficulty: 4 out of 5">
+    ★★★★☆
+  </span>
+</div>
+```
+
+## The Problem
+
+**Devanāgarī** is an abugida (alphasyllabary) used to write Sanskrit, Hindi, and many other South Asian languages. Below are ten Sanskrit words written in Devanāgarī script, paired with their romanized transcriptions using standard IAST notation.
+
+```{=html}
+<table class="lang-data">
+<thead>
+<tr><th>#</th><th>Devanāgarī</th><th>IAST Romanization</th><th>Meaning</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td style="font-size:1.3rem;">नम</td><td>nama</td><td>name</td></tr>
+<tr><td>2</td><td style="font-size:1.3rem;">पद</td><td>pada</td><td>foot / word</td></tr>
+<tr><td>3</td><td style="font-size:1.3rem;">कमल</td><td>kamala</td><td>lotus</td></tr>
+<tr><td>4</td><td style="font-size:1.3rem;">तप</td><td>tapa</td><td>heat / austerity</td></tr>
+<tr><td>5</td><td style="font-size:1.3rem;">मन</td><td>mana</td><td>mind</td></tr>
+<tr><td>6</td><td style="font-size:1.3rem;">नदी</td><td>nadī</td><td>river</td></tr>
+<tr><td>7</td><td style="font-size:1.3rem;">काल</td><td>kāla</td><td>time / black</td></tr>
+<tr><td>8</td><td style="font-size:1.3rem;">पाद</td><td>pāda</td><td>foot (formal)</td></tr>
+<tr><td>9</td><td style="font-size:1.3rem;">तन</td><td>tana</td><td>body</td></tr>
+<tr><td>10</td><td style="font-size:1.3rem;">मनन</td><td>manana</td><td>reflection</td></tr>
+</tbody>
+</table>
+```
+
+### Questions
+
+**A.** Devanāgarī is an **abugida** — each character represents a consonant with an inherent vowel. What is the inherent vowel in this data?
+
+**B.** How is a **long vowel** (ā, ī) marked differently from a short vowel?
+
+**C.** Based on the data, give the Devanāgarī characters for each of the following consonants and vowel markers you can identify: n, m, p, k, t, d, l and the vowels a, ā, i, ī.
+
+**D.** Transliterate the following Devanāgarī words into IAST:
+1. <span style="font-size:1.3rem;">दम</span>
+2. <span style="font-size:1.3rem;">काम</span>
+3. <span style="font-size:1.3rem;">तलम</span>
+
+**E.** *(Challenge)* Write the following in Devanāgarī: *nāma* (noun form of "name")
+
+---
+
+## Hints
+
+::: {.hint-block}
+<details>
+<summary>Hint 1 — What is an abugida?</summary>
+
+In an abugida (unlike an alphabet), each basic symbol = consonant + inherent vowel. To use a *different* vowel, you add a **diacritic** to the consonant. To use *no* vowel (consonant cluster), you use a special mark called a **virāma**.
+
+Look at rows 1 and 7: both start with `न` (n) and `क` (k) respectively — but row 7 has different shapes attached. What might those extra marks indicate?
+</details>
+:::
+
+::: {.hint-block}
+<details>
+<summary>Hint 2 — Identifying the inherent vowel</summary>
+
+Compare `नम` (nama) and `मन` (mana). Both use the same two characters — but in different orders. The character `न` appears word-initially in row 1 and maps to 'na'; the character `म` appears word-initially in row 5 as 'ma'. Notice that neither character has any extra mark. So what vowel comes automatically (inherently) after each bare consonant? 
+</details>
+:::
+
+::: {.hint-block}
+<details>
+<summary>Hint 3 — Spotting the long vowel diacritic</summary>
+
+Compare rows 6 and 1: `नदी` (nadī) vs `नम` (nama). The character `न` is the same in both. But in row 6, the final consonant `द` has an extra mark: the vertical stroke `ी`. This mark is the **long ī diacritic**. Similarly, compare rows 7/8 with 3/4 to find the **long ā diacritic** `ा`.
+</details>
+:::
+
+---
+
+## Solution
+
+```{=html}
+<button class="reveal-btn" onclick="
+  var s = document.getElementById('sol2');
+  s.classList.toggle('visible');
+  this.textContent = s.classList.contains('visible') ? 'Hide Solution' : 'Reveal Full Solution';
+">Reveal Full Solution</button>
+<div id="sol2" class="hidden-solution">
+```
+
+::: {.solution-block}
+### Solution {.solution-header}
+Complete decipherment
+:::
+
+### Step 1: Identify consonant characters
+
+By comparing words that share segments, we can isolate each symbol:
+
+| Character | Romanization | Evidence |
+|-----------|-------------|---------|
+| न | n | rows 1, 5, 6, 9, 10 |
+| म | m | rows 1, 5, 10 |
+| प | p | rows 2, 4 |
+| क | k | rows 3, 7 |
+| त | t | rows 4, 9 |
+| द | d | rows 2, 6 |
+| ल | l | rows 3, 8 |
+
+### Step 2: The inherent vowel
+
+Every bare consonant (no diacritic) represents **consonant + a** (short *a*). This is the **inherent vowel**. So `न` alone = *na*, not *n*.
+
+### Step 3: Vowel diacritics
+
+| Diacritic | Vowel | Example |
+|-----------|-------|---------|
+| (none) | a | `न` = na |
+| ा | ā (long a) | `का` = kā (row 7 initial) |
+| ी | ī (long i) | `दी` = dī (row 6 final) |
+
+The long vowels are marked with a **matra** (vowel sign) added to the right of the consonant.
+
+### Step 4: Transliterations (Part D)
+
+1. <span style="font-size:1.2rem;">दम</span> = **d** + **a** (inherent) + **m** + **a** (inherent) = ***dama*** (self-control)
+2. <span style="font-size:1.2rem;">काम</span> = **k** + **ā** (long-a diacritic) + **m** + **a** (inherent) = ***kāma*** (desire)
+3. <span style="font-size:1.2rem;">तलम</span> = **t** + **a** + **l** + **a** + **m** + **a** = ***talama***
+
+### Step 5: Writing *nāma* (Challenge)
+
+*nāma* = n + ā + m + a
+
+- n = न
+- ā diacritic = ा → applied to न → **ना**
+- m + a (inherent) = म → **म**
+
+Combined: **नाम**
+
+### Linguistic Commentary
+
+Devanāgarī is one of the world's most systematically organized writing systems. Its abugida structure reflects Sanskrit phonology — the script was designed for Sanskrit around the 1st millennium CE and explicitly encodes the **syllabic** nature of the language. The traditional ordering of characters (vowels, then consonants by place and manner of articulation) shows a sophisticated phonological analysis that wasn't matched in Europe until the 19th century.
+
+The term *abugida* itself comes from the first four letters of Ge'ez (Ethiopian script), coined by linguist Peter Daniels in 1990.
+
+**Related concepts:** abugida vs alphabet vs abjad, syllabic writing, vowel diacritics, IAST transliteration
+
+```{=html}
+</div>
+```
+
+---
+
+## Related Problems
+
+- [Cherokee Syllabary](../2022/cherokee.qmd) — another syllabary, independently invented in 1820
+- [Linear B Decipherment](../2022/linear-b.qmd) — historical script decipherment
+- [Hangul Structure](../2023/hangul.qmd) — a featural alphabet with abugida-like block structure

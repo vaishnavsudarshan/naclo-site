@@ -1,0 +1,85 @@
+---
+title: "Problem Topics"
+toc: false
+page-layout: full
+---
+
+Each topic area appears regularly across NACLO, NACLI, and IOL. Click a topic to see all problems in that area, along with a short guide to the core concepts you'll need.
+
+```{=html}
+<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:1.25rem; margin-top:2rem;">
+
+<a href="topics/morphology.qmd" style="text-decoration:none;">
+<div class="problem-card" style="--problem-accent:#7a2e10;">
+  <div style="font-size:1.6rem; margin-bottom:0.5rem;">🔤</div>
+  <h3 style="margin:0 0 0.4rem; color:#0a0a0f;">Morphology</h3>
+  <p style="margin:0; font-size:0.88rem; color:#5c4a3a;">Word structure, affixation, agglutination, inflection vs. derivation. The most common problem type.</p>
+  <div style="margin-top:1rem; font-size:0.8rem; color:#b5451b; font-weight:600;">48 problems →</div>
+</div>
+</a>
+
+<a href="topics/phonology.qmd" style="text-decoration:none;">
+<div class="problem-card" style="--problem-accent:#0f3d6e;">
+  <div style="font-size:1.6rem; margin-bottom:0.5rem;">🔊</div>
+  <h3 style="margin:0 0 0.4rem; color:#0a0a0f;">Phonology</h3>
+  <p style="margin:0; font-size:0.88rem; color:#5c4a3a;">Sound systems, distinctive features, phonological rules, alternations, and IPA transcription.</p>
+  <div style="margin-top:1rem; font-size:0.8rem; color:#b5451b; font-weight:600;">31 problems →</div>
+</div>
+</a>
+
+<a href="topics/syntax.qmd" style="text-decoration:none;">
+<div class="problem-card" style="--problem-accent:#1a4d31;">
+  <div style="font-size:1.6rem; margin-bottom:0.5rem;">🌳</div>
+  <h3 style="margin:0 0 0.4rem; color:#0a0a0f;">Syntax</h3>
+  <p style="margin:0; font-size:0.88rem; color:#5c4a3a;">Sentence structure, word order typology, constituency, agreement, and grammatical relations.</p>
+  <div style="margin-top:1rem; font-size:0.8rem; color:#b5451b; font-weight:600;">27 problems →</div>
+</div>
+</a>
+
+<a href="topics/writing-systems.qmd" style="text-decoration:none;">
+<div class="problem-card" style="--problem-accent:#5a1d8a;">
+  <div style="font-size:1.6rem; margin-bottom:0.5rem;">✍️</div>
+  <h3 style="margin:0 0 0.4rem; color:#0a0a0f;">Writing Systems</h3>
+  <p style="margin:0; font-size:0.88rem; color:#5c4a3a;">Alphabets, abugidas, syllabaries, logographic scripts, and historical decipherment.</p>
+  <div style="margin-top:1rem; font-size:0.8rem; color:#b5451b; font-weight:600;">35 problems →</div>
+</div>
+</a>
+
+<a href="topics/computational.qmd" style="text-decoration:none;">
+<div class="problem-card" style="--problem-accent:#0a4a2d;">
+  <div style="font-size:1.6rem; margin-bottom:0.5rem;">💻</div>
+  <h3 style="margin:0 0 0.4rem; color:#0a0a0f;">Computational</h3>
+  <p style="margin:0; font-size:0.88rem; color:#5c4a3a;">Formal grammars, automata, edit distance, language models, and algorithmic reasoning about language.</p>
+  <div style="margin-top:1rem; font-size:0.8rem; color:#b5451b; font-weight:600;">22 problems →</div>
+</div>
+</a>
+
+<a href="topics/numerals.qmd" style="text-decoration:none;">
+<div class="problem-card" style="--problem-accent:#7a5a0a;">
+  <div style="font-size:1.6rem; margin-bottom:0.5rem;">🔢</div>
+  <h3 style="margin:0 0 0.4rem; color:#0a0a0f;">Numeral Systems</h3>
+  <p style="margin:0; font-size:0.88rem; color:#5c4a3a;">Counting systems, bases, vigesimal systems, and cross-linguistic number words.</p>
+  <div style="margin-top:1rem; font-size:0.8rem; color:#b5451b; font-weight:600;">19 problems →</div>
+</div>
+</a>
+
+<a href="topics/kinship.qmd" style="text-decoration:none;">
+<div class="problem-card" style="--problem-accent:#3d1a1a;">
+  <div style="font-size:1.6rem; margin-bottom:0.5rem;">👨‍👩‍👧</div>
+  <h3 style="margin:0 0 0.4rem; color:#0a0a0f;">Kinship Systems</h3>
+  <p style="margin:0; font-size:0.88rem; color:#5c4a3a;">Kinship terminology, classificatory vs descriptive systems, and logical reasoning about family relations.</p>
+  <div style="margin-top:1rem; font-size:0.8rem; color:#b5451b; font-weight:600;">14 problems →</div>
+</div>
+</a>
+
+<a href="topics/historical.qmd" style="text-decoration:none;">
+<div class="problem-card" style="--problem-accent:#2d3d1a;">
+  <div style="font-size:1.6rem; margin-bottom:0.5rem;">📜</div>
+  <h3 style="margin:0 0 0.4rem; color:#0a0a0f;">Historical Linguistics</h3>
+  <p style="margin:0; font-size:0.88rem; color:#5c4a3a;">Sound change, proto-language reconstruction, language families, and comparative method.</p>
+  <div style="margin-top:1rem; font-size:0.8rem; color:#b5451b; font-weight:600;">18 problems →</div>
+</div>
+</a>
+
+</div>
+```

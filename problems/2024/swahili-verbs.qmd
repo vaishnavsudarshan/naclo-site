@@ -1,0 +1,221 @@
+---
+title: "The Swahili Verb Machine"
+date: 2024-01-15
+categories: [Morphology, Agglutination, Bantu, Medium]
+description: "Uncover the systematic rules behind Swahili verb conjugation — tense, agreement, and object marking — then predict unseen forms."
+competition: NACLO
+round: Open
+year: 2024
+difficulty: 2
+points: 20
+author: "Adapted from NACLO 2024"
+---
+
+```{=html}
+<div class="breadcrumb-nav">
+  <span>Home</span><span class="sep">›</span>
+  <a href="../index.qmd">Problems</a><span class="sep">›</span>
+  <span>The Swahili Verb Machine</span>
+</div>
+
+<div class="problem-meta" style="margin-bottom:1.5rem;">
+  <span class="tag tag-naclo">NACLO 2024</span>
+  <span class="tag tag-morphology">Morphology</span>
+  <span class="tag tag-medium">Medium</span>
+  <span class="difficulty" title="Difficulty: 2/5" aria-label="Difficulty: 2 out of 5">
+    ★★☆☆☆
+  </span>
+</div>
+```
+
+## The Problem
+
+Below are some sentences in **Swahili** (a Bantu language spoken across East Africa) along with their English translations. Study the data carefully.
+
+```{=html}
+<table class="lang-data">
+<thead>
+<tr><th>#</th><th>Swahili</th><th>English</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>Ninapenda</td><td>I love</td></tr>
+<tr><td>2</td><td>Unapenda</td><td>You (sg.) love</td></tr>
+<tr><td>3</td><td>Anapenda</td><td>He/she loves</td></tr>
+<tr><td>4</td><td>Ninapika</td><td>I cook</td></tr>
+<tr><td>5</td><td>Unapika</td><td>You (sg.) cook</td></tr>
+<tr><td>6</td><td>Anapika</td><td>He/she cooks</td></tr>
+<tr><td>7</td><td>Nilipenda</td><td>I loved</td></tr>
+<tr><td>8</td><td>Ulipenda</td><td>You (sg.) loved</td></tr>
+<tr><td>9</td><td>Alipenda</td><td>He/she loved</td></tr>
+<tr><td>10</td><td>Nitapenda</td><td>I will love</td></tr>
+<tr><td>11</td><td>Utapenda</td><td>You (sg.) will love</td></tr>
+<tr><td>12</td><td>Atapenda</td><td>He/she will love</td></tr>
+<tr><td>13</td><td>Ninapendana</td><td>We love each other (I+another)</td></tr>
+<tr><td>14</td><td>Wanapenda</td><td>They love</td></tr>
+<tr><td>15</td><td>Walipika</td><td>They cooked</td></tr>
+</tbody>
+</table>
+```
+
+### Questions
+
+**A.** Identify and describe the morphemes (meaningful units) that make up Swahili verbs. What does each part contribute to meaning?
+
+**B.** Translate the following into Swahili:
+
+1. They will cook
+2. He/she cooked  
+3. You (sg.) will love
+
+**C.** What is the Swahili word for "love" (the verb root)? For "cook"?
+
+**D.** *(Challenge)* The word `Ninapendana` in row 13 contains an extra morpheme. What does `-ana` mean? Predict the Swahili for "They cook each other."
+
+---
+
+## Hints
+
+::: {.hint-block}
+<details>
+<summary>Hint 1 — Getting started</summary>
+
+Compare rows 1–3 with rows 4–6. These sentences share the same subject and tense. What changes between each pair? What stays the same? That difference is likely the **verb root**.
+</details>
+:::
+
+::: {.hint-block}
+<details>
+<summary>Hint 2 — Finding morpheme boundaries</summary>
+
+Now compare rows 1, 7, and 10 — all three use "I" as subject, but with different tenses. Line up the words:
+
+- `Ni-na-penda`
+- `Ni-li-penda`  
+- `Ni-ta-penda`
+
+Do you see a pattern? Each word is built from **slots**: `SUBJECT + TENSE + ROOT`. Try identifying which syllable fills each slot.
+</details>
+:::
+
+::: {.hint-block}
+<details>
+<summary>Hint 3 — The subject prefixes</summary>
+
+| Person | Prefix |
+|--------|--------|
+| I | Ni- |
+| You (sg.) | U- |
+| He/She | A- |
+| They | Wa- |
+
+Now what are the tense markers?
+</details>
+:::
+
+---
+
+## Solution
+
+```{=html}
+<button class="reveal-btn" onclick="
+  var s = document.getElementById('solution');
+  s.classList.toggle('visible');
+  this.textContent = s.classList.contains('visible') ? 'Hide Solution' : 'Reveal Full Solution';
+">Reveal Full Solution</button>
+<div id="solution" class="hidden-solution">
+```
+
+::: {.solution-block}
+### Solution Header {.solution-header}
+Full worked solution
+:::
+
+### Step 1: Identify the verb root
+
+Comparing sentences with the same subject and tense but different verbs:
+
+- `Ninapenda` (I love) vs `Ninapika` (I cook)
+
+The shared material is `Nina-`. The differing parts are **`penda`** (love) and **`pika`** (cook). These are the verb roots.
+
+✅ **penda** = "love" &emsp; **pika** = "cook"
+
+### Step 2: Segment the verbs
+
+Each Swahili verb has the structure:
+
+$$\text{SUBJECT PREFIX} + \text{TENSE MARKER} + \text{VERB ROOT}$$
+
+| Example | Subject | Tense | Root |
+|---------|---------|-------|------|
+| Ni-na-penda | Ni (I) | na (present) | penda |
+| U-na-penda  | U (you sg.) | na (present) | penda |
+| A-na-penda  | A (he/she) | na (present) | penda |
+| Ni-li-penda | Ni (I) | li (past) | penda |
+| Ni-ta-penda | Ni (I) | ta (future) | penda |
+| Wa-na-penda | Wa (they) | na (present) | penda |
+
+### Step 3: The full paradigm
+
+**Subject prefixes:**
+
+| Person | Prefix |
+|--------|--------|
+| I | Ni- |
+| You (sg.) | U- |
+| He/She | A- |
+| They | Wa- |
+
+**Tense markers:**
+
+| Tense | Marker |
+|-------|--------|
+| Present | -na- |
+| Past | -li- |
+| Future | -ta- |
+
+### Step 4: Answers to Part B
+
+1. "They will cook" → Wa + ta + pika = **Watapika** ✓
+2. "He/she cooked" → A + li + pika = **Alipika** ✓
+3. "You (sg.) will love" → U + ta + penda = **Utapenda** ✓
+
+### Step 5: The reciprocal `-ana` (Challenge)
+
+`Ninapendana` = Ni + na + penda + **ana** = "I love each other [with another]"
+
+The suffix **`-ana`** marks **reciprocal action** — the participants do the action to each other.
+
+"They cook each other" → Wa + na + pika + ana = **Wanapikaana**
+
+### Linguistic Commentary
+
+Swahili is a **Bantu language**, and this problem showcases its highly **agglutinative** morphology — words are built by gluing morphemes together with minimal phonological change at the boundaries. Unlike English (where "I love" vs "she loves" only adds an *-s*), Swahili encodes both subject agreement and tense as prefixes.
+
+This slot-based morphology is very common in Bantu languages and is one reason they're frequently featured in linguistics olympiads — the patterns are rich but discoverable.
+
+**Related concepts:** agglutination, morpheme segmentation, agreement morphology, verbal aspect
+
+```{=html}
+</div>
+```
+
+---
+
+## Related Problems
+
+- [Zulu Noun Classes](../2023/zulu-nouns.qmd) — another Bantu language, focusing on the noun class system
+- [Turkish Verb Conjugation](../2022/turkish-verbs.qmd) — agglutination in a non-Bantu language for comparison
+- [Finnish Case System](../2022/finnish-cases.qmd) — another classic agglutinative language
+
+```{=html}
+<script>
+// Smooth reveal animation
+document.querySelectorAll('.reveal-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const target = document.getElementById(this.getAttribute('onclick')
+      .match(/getElementById\('([^']+)'\)/)?.[1] || '');
+  });
+});
+</script>
+```

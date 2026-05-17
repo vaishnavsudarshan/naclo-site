@@ -1,0 +1,66 @@
+---
+title: "Morphology"
+subtitle: "The structure of words"
+categories: [Morphology]
+listing:
+  id: morph-problems
+  contents: "../problems/**/*.qmd"
+  type: table
+  include:
+    categories: "{Morphology}"
+  fields: [title, date, categories, description]
+  filter-ui: true
+  sort: "date desc"
+toc: true
+---
+
+Morphology problems ask you to find the **meaningful units** (morphemes) that make up words in an unfamiliar language, then apply those rules to translate new forms. They are the most common problem type at NACLO and always appear at IOL.
+
+## Core Concepts
+
+### What is a morpheme?
+A **morpheme** is the smallest unit of meaning. English *unbreakable* has three: `un-` (not) + `break` (the root) + `-able` (capable of being).
+
+### Types of morphology
+
+**Agglutinative** (Swahili, Turkish, Finnish)
+: Morphemes stack transparently with clear boundaries. Each morpheme = one meaning. Easiest to segment.
+
+**Fusional / inflectional** (Latin, Russian, Spanish)
+: One morpheme encodes multiple meanings simultaneously (e.g., Latin *-ō* = 1st person + singular + present + active all at once).
+
+**Polysynthetic** (many Indigenous American languages)
+: Entire sentences can be expressed in a single word through extensive affixation.
+
+**Isolating** (Mandarin, Vietnamese)
+: Words tend not to change form; grammatical relations expressed by word order and particles.
+
+### Key vocabulary
+
+| Term | Definition |
+|------|-----------|
+| Root | Core meaning-bearing unit |
+| Prefix | Morpheme before the root |
+| Suffix | Morpheme after the root |
+| Infix | Morpheme inserted *into* the root |
+| Circumfix | Morpheme that wraps around root (prefix + suffix together) |
+| Inflection | Morphology that doesn't change word class (tense, case, number) |
+| Derivation | Morphology that creates new words / changes class |
+
+### Problem-solving strategy
+
+1. **Find minimal pairs** — pairs of words that differ in exactly one meaning unit
+2. **Align them** — line up the forms to spot what changes and what stays the same
+3. **Hypothesize morpheme boundaries** — mark boundaries tentatively
+4. **Verify** — check that your analysis correctly predicts all given forms
+5. **Apply** — use your rules to translate the target forms
+
+::: {.callout-note}
+## Watch out for zero morphemes!
+Sometimes a grammatical distinction is marked by the *absence* of a morpheme. In English, "sheep" is both singular and plural — the plural is a zero morpheme ∅. Olympiad problems sometimes test this.
+:::
+
+## Practice Problems
+
+::: {#morph-problems}
+:::

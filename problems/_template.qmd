@@ -1,0 +1,111 @@
+---
+title: "Problem Title Here"
+date: YYYY-MM-DD
+categories: [TopicArea, SubTopic, Difficulty]   # e.g. [Morphology, Agglutination, Medium]
+description: "One sentence describing what the problem asks and why it's interesting."
+competition: NACLO   # NACLO | NACLI | IOL
+round: Open          # Open | Invitational | Individual | Team
+year: 2024
+difficulty: 2        # 1=Easy 2=Medium 3=Hard 4=Very Hard 5=Exceptional
+points: 20           # Points in the original competition
+---
+
+```{=html}
+<div class="breadcrumb-nav">
+  <span>Home</span><span class="sep">›</span>
+  <a href="../index.qmd">Problems</a><span class="sep">›</span>
+  <span>Problem Title</span>
+</div>
+
+<div class="problem-meta" style="margin-bottom:1.5rem;">
+  <span class="tag tag-naclo">NACLO YEAR</span>
+  <span class="tag tag-morphology">Topic</span>
+  <span class="tag tag-medium">Medium</span>
+</div>
+```
+
+## The Problem
+
+<!-- Write problem statement here. Include all necessary data. -->
+
+Background context (optional): one or two sentences about the language.
+
+```{=html}
+<table class="lang-data">
+<thead>
+<tr><th>#</th><th>Language X</th><th>English</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>example</td><td>translation</td></tr>
+<!-- Add more rows -->
+</tbody>
+</table>
+```
+
+### Questions
+
+**A.** First question.
+
+**B.** Second question.
+
+---
+
+## Hints
+
+::: {.hint-block}
+<details>
+<summary>Hint 1 — Getting started</summary>
+Gentle nudge toward the right approach.
+</details>
+:::
+
+::: {.hint-block}
+<details>
+<summary>Hint 2 — Going further</summary>
+More specific guidance.
+</details>
+:::
+
+---
+
+## Solution
+
+```{=html}
+<button class="reveal-btn" onclick="
+  var s = document.getElementById('solution');
+  s.classList.toggle('visible');
+  this.textContent = s.classList.contains('visible') ? 'Hide Solution' : 'Reveal Full Solution';
+">Reveal Full Solution</button>
+<div id="solution" class="hidden-solution">
+```
+
+::: {.solution-block}
+### Solution {.solution-header}
+Brief description of approach
+:::
+
+<!-- Write full solution with step-by-step reasoning -->
+
+### Part A
+
+Explanation...
+
+### Part B
+
+Explanation...
+
+### Linguistic Commentary
+
+Discuss the broader linguistic significance, what makes this language interesting, related phenomena.
+
+**Related concepts:** list key terms
+
+```{=html}
+</div>
+```
+
+---
+
+## Related Problems
+
+- [Link to related problem](../YYYY/slug.qmd)

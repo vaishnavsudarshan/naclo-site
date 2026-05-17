@@ -1,0 +1,64 @@
+/* Interactive problem elements */
+
+.reveal-btn {
+  background: none;
+  border: 1.5px solid #b5451b;
+  color: #b5451b;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 0.45rem 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  margin: 0.5rem 0;
+}
+.reveal-btn:hover { background: #b5451b; color: #fff; }
+.reveal-btn:focus { outline: 2px solid #b5451b; outline-offset: 3px; }
+
+.hidden-solution { display: none; }
+.hidden-solution.visible { display: block; animation: fadeIn 0.3s ease; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Progress tracker */
+.progress-bar-wrap {
+  background: rgba(90,70,50,0.1);
+  border-radius: 99px;
+  height: 6px;
+  margin: 1rem 0 2rem;
+  overflow: hidden;
+}
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 99px;
+  background: linear-gradient(90deg, #b5451b, #e8a87c);
+  transition: width 0.4s ease;
+}
+
+/* Breadcrumb */
+.breadcrumb-nav {
+  font-size: 0.8rem;
+  color: #7a6554;
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+
+  a { color: #7a6554; text-decoration: none; }
+  a:hover { color: #b5451b; }
+  .sep { opacity: 0.5; }
+}
+
+/* Difficulty stars */
+.difficulty {
+  display: inline-flex;
+  gap: 2px;
+  font-size: 0.75rem;
+  color: #c77d0a;
+}
+.difficulty .empty { color: rgba(90,70,50,0.2); }
