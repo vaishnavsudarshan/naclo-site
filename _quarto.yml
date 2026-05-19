@@ -77,6 +77,12 @@ format:
     toc: true
     toc-depth: 3
     toc-expand: true
+    page-layout: article
+    grid:
+      sidebar-width: 220px
+      body-width: 1000px
+      margin-width: 0px
+      gutter-width: 2rem
     number-sections: false
     smooth-scroll: true
     code-fold: true
