@@ -7,16 +7,17 @@ on:
     branches: [main]
   workflow_dispatch:
 
-# Allow writing to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Only one deployment at a time
 concurrency:
   group: "pages"
   cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   build:
@@ -28,23 +29,7 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
-          version: "pre-release"   # or pin e.g. "1.5.57"
-
-      - name: Set up Python (for any Python-based computations)
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-          cache: "pip"
-
-      - name: Install Python dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install jupyter matplotlib pandas
-
-      - name: Set up R (optional — remove if not using R code chunks)
-        uses: r-lib/actions/setup-r@v2
-        with:
-          use-public-rspm: true
+          version: "pre-release"
 
       - name: Render Quarto site
         run: quarto render
